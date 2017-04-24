@@ -18,7 +18,7 @@ public class ZambelliAttackerMember extends clanmelee.Clan
     public ArrayList<clanmelee.ClanMember> getClanMembers(int hitPoints) {
         ArrayList<clanmelee.ClanMember> clanMembers = new ArrayList<>();
 
-        clanmelee.ActionPointDecider decider = new Team4Clan.ZambelliAttackerDecider(10);
+        clanmelee.ActionPointDecider decider = new ZambelliAttackerDecider(10);
 
         int adjHitPoints = (int)(hitPoints * .25);
         while (adjHitPoints > 0) {

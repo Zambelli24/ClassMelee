@@ -17,10 +17,10 @@ public class Team4Clan extends clanmelee.Clan {
         if(hitPoints >= 5000)
         {
             ZambelliAttackerMember zam = new ZambelliAttackerMember(getClanID());
-            Team4Clan.ZambelliAggressiveAttackerMember zaam = new Team4Clan.ZambelliAggressiveAttackerMember(getClanID());
-            Team4Clan.ZambelliHealerMember zhm = new Team4Clan.ZambelliHealerMember(getClanID());
+            ZambelliAggressiveAttackerMember zaam = new ZambelliAggressiveAttackerMember(getClanID());
+            ZambelliHealerMember zhm = new ZambelliHealerMember(getClanID());
             ZambelliAggressiveHealerMember zahm = new ZambelliAggressiveHealerMember(getClanID());
-            Team4Clan.ZambelliSpecialHealerMember zshm = new Team4Clan.ZambelliSpecialHealerMember(getClanID());
+            ZambelliSpecialHealerMember zshm = new ZambelliSpecialHealerMember(getClanID());
 
             fullClanMembers.addAll(zam.getClanMembers(hitPoints));
             fullClanMembers.addAll(zaam.getClanMembers(hitPoints));
@@ -31,7 +31,7 @@ public class Team4Clan extends clanmelee.Clan {
         }
         else
         {
-            Team4Clan.CarrHealerMember carrHealer = new Team4Clan.CarrHealerMember(getClanID());
+            CarrHealerMember carrHealer = new CarrHealerMember(getClanID());
             CarrFighterMember carrFighter = new CarrFighterMember(getClanID());
 
             fullClanMembers.addAll(carrHealer.getClanMembers(hitPoints));

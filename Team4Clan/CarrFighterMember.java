@@ -18,7 +18,7 @@ public class CarrFighterMember extends clanmelee.Clan {
     public ArrayList<clanmelee.ClanMember> getClanMembers(int hitPoints) {
         ArrayList<clanmelee.ClanMember> clanMembers = new ArrayList<>();
 
-        clanmelee.ActionPointDecider decider = new Team4Clan.CarrFighterDecider(10);
+        clanmelee.ActionPointDecider decider = new CarrFighterDecider(10);
 
         int adjHitPoints = (int)(hitPoints * .65);
         while (adjHitPoints > 0) {
